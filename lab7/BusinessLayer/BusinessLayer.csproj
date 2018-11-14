@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DataLayer">
+      <HintPath>..\DataLayer\bin\Debug\netcoreapp2.1\DataLayer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
