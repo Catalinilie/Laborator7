@@ -11,6 +11,14 @@ namespace DataLayer
             Name = name;
             Description = description;
         }
+
+        public POI(Guid id, string name, string description)
+        {
+            Id = id;
+            Name = name;
+            Description = description;
+        }
+
         public Guid Id { get; private set; }
 
         [StringLength(150, MinimumLength = 50)]
