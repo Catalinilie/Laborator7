@@ -27,9 +27,19 @@ namespace BusinessLayer
             _context.SaveChanges();
         }
 
-        public void Edit(POI poi)
+        public void Edit(Guid id, POI poi)
         {
-            throw new NotImplementedException();
+            POI poii = new POI(id, poi.Name, poi.Description);
+            POI pooi = this._context.POIs.Find(id);
+            this._context.POIs.Remove(pooi);
+            this._context.POIs.Add(poii);
+            this._context.SaveChanges();
+        }
+
+        public POI GetById(Guid poi_id)
+        {
+            POI poi = _context.POIs.Find(poi_id);
+            return poi;
         }
 
         public List<POI> GetPOIs()
