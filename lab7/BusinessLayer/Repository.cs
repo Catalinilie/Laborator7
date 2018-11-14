@@ -32,11 +32,10 @@ namespace BusinessLayer
             throw new NotImplementedException();
         }
 
-        public List<City> GetCity()
+        public City GetById(Guid id)
         {
-            List<City> list = new List<City>(10);
-            list.Add(new City("Oras1","asd",1,1));
-            return list;
+            return new City("Oras1", "asd", 1, 1);
         }
+        
     }
 }

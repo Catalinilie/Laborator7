@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using DataLayer;
 
 namespace BusinessLayer
@@ -32,11 +31,9 @@ namespace BusinessLayer
             throw new NotImplementedException();
         }
 
-        public List<POI> GetPOIs()
+        public City GetCity()
         {
-            List<POI> list = new List<POI>(10);
-            list.Add(new POI("POI1","Description of POI 1"));
-            return list;
+            return new City("Oras1", "asd", 1, 1);
         }
      
     }

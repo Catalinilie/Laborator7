@@ -1,4 +1,5 @@
 ﻿using DataLayer;
+using System;
 using System.Collections.Generic;
 
 namespace BusinessLayer
@@ -8,6 +9,6 @@ namespace BusinessLayer
         void Create(City city);
         void Edit(City city);
         void Delete(City city);
-        List<City> GetCity();
+        City GetById(Guid id);
     }
 }

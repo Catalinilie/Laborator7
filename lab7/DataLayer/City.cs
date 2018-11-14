@@ -28,6 +28,11 @@ namespace DataLayer
         public Double Longitude { get; private set; }
 
         public List<POI> POIs { get; private set; }
-       
+
+        public POI GetPOIById(Guid id)
+        {
+            return (new POI("POI", "Poi description"));
+        }
+
     }
 }
