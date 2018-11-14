@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace BusinessLayer
 {
-    public interface IPOIRepository
+  public interface IPOIRepository
     {
         void Create(POI poi);
         void Edit(Guid id, POI poi);

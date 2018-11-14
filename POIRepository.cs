@@ -4,7 +4,7 @@ using DataLayer;
 
 namespace BusinessLayer
 {
-    public class POIRepository : IPOIRepository
+    public class POIRepository:IPOIRepository
     {
         POIContext _context;
 
@@ -45,9 +45,9 @@ namespace BusinessLayer
         public List<POI> GetPOIs()
         {
             List<POI> list = new List<POI>(10);
-            list.Add(new POI("POI1", "Description of POI 1"));
+            list.Add(new POI("POI1","Description of POI 1"));
             return list;
         }
-
+     
     }
 }
